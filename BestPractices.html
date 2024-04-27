@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="best_practice">
+        <div class="container">
+            <h2 class="mb-3">Safety Best Practices</h2>
+            <div class="mb-3">
+                <h4 class="mb-3">Leverage our complimentary Moderation API</h4>
+                <div  class="mb-3">SML RETAIL INDIA PRIVATE LIMITED’s Moderation API is available for free and
+                    can assist in minimising the occurrence of inappropriate content in your generated
+                    outputs. Alternatively, you may opt to create a custom content filtration system
+                    tailored to your specific use case.</div>
+            </div>
+            <div>
+                <h4 class="mb-3">Adversarial testing</h4>
+                <div class="mb-3">We recommend conducting “red-team testing” on your application to ensure its
+                    resilience to adversarial input. Test your product across a diverse range of inputs and
+                    user behaviours, covering both a representative set and scenarios simulating
+                    attempts to ‘challenge’ your application. Evaluate whether it deviates from the
+                    intended topic and if it can be easily manipulated through prompt injections, such as
+                    instructing it to “disregard the previous instructions and perform this action instead.”</div>
+            </div>
+            <div>
+                <h4 class="mb-3">Human in the Loop (HITL)</h4>
+                <div class="mb-3">Whenever feasible, we recommend incorporating human oversight to review outputs
+                    before practical use. This is particularly crucial in high-stakes domains and for tasks
+                    involving code generation. Humans should be informed about the system’s
+                    limitations and have access to any necessary information for verifying outputs (for
+                    example, if an application summarises notes, a human should easily access the
+                    original notes for reference).</div>
+            </div>
+            <div>
+                <h4 class="mb-3">Prompt Engineering</h4>
+                <div class="mb-3">Utilising “prompt engineering” proves effective in constraining the topic and tone of
+                    output text. This minimises the likelihood of generating undesired content, even
+                    when a user attempts to elicit it. Offering additional context to the model (such as
+                    providing a few high-quality examples of desired behaviour before presenting new
+                    input) can facilitate steering model outputs in desired directions.</div>
+            </div>
+
+            <div>
+                <h4 class="mb-3">“Know Your Customer” (KYC)</h4>
+                <div class="mb-3">Typically, users should register and log in to access your service. Linking this service
+                    to an existing account, such as Gmail, LinkedIn, or Facebook log-in, may be
+                    beneficial, but its appropriateness depends on the specific use-case. Requesting a
+                    credit card or ID card can further reduce risk.</div>
+            </div>
+            <div>
+                <h4 class="mb-3">Constrain User Input and Limit Output Tokens</h4>
+                <div class="mb-3">SML RETAIL INDIA PRIVATE LIMITED’s Moderation API is available for free and
+                    can assist in minimising the occurrence of inappropriate content in your generated
+                    outputs. Alternatively, you may opt to create a custom content filtration system
+                    tailored to your specific use case.</div>
+            </div>
+            <div>
+                <h4 class="mb-3">Return Outputs from Validated Sets</h4>
+                <div class="mb-3">Returning outputs from a validated set of materials on the backend, whenever
+                    possible, is safer than generating novel content. For instance, routing a customer
+                    query to the most relevant existing customer support article rather than attempting to
+                    answer the query from scratch can enhance security.</div>
+            </div>
+            <div>
+                <h4 class="mb-3">Enable Issue Reporting</h4>
+                <div class="mb-3">Users should have an easily accessible method for reporting improper functionality
+                    or concerns about application behaviour (such as a listed email address or ticket
+                    submission method). This reporting method should be monitored by a human and
+                    addressed appropriately.</div>
+            </div>
+            <div>
+                <h4 class="mb-3">Understand and Communicate Limitations</h4>
+                <div class="mb-3">From generating inaccurate information to producing offensive outputs and exhibiting
+                    bias, language models may not be suitable for every use case without significant
+                    modifications. Assess whether the model is suitable for your purpose and evaluate
+                    the API’s performance across a diverse range of potential inputs to identify scenarios
+                    where performance might decline. Consider your customer base and the variety of
+                    inputs they might use, ensuring their expectations are appropriately calibrated.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

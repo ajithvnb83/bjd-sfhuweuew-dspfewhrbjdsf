@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="content-moderater">
+        <div class="container">
+            <h2>Content Moderation</h2>
+            <div>The moderation endpoint serves as a valuable tool for assessing content compliance
+                with SML Retail India Private Limited’s usage policies. Developers can utilise this
+                endpoint to identify and address content that may violate our policies, such as
+                filtering it out.</div>
+            <div>The models categorise content into the following classifications:</div>
+            <table>
+                <thead>
+                    <th>Category</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hate</td>
+                        <td>Content that expresses, incites, or promotes
+                            hatred on the grounds of race, gender, ethnicity,
+                            religion, nationality, sexual orientation, disability
+                            status, or caste. Harassment is extended
+                            to include hateful content directed at non-protected
+                            groups (e.g., chess players).</td>
+                    </tr>
+                    <tr>
+                        <td>Hate/Threatening</td>
+                        <td>Content that is both hateful and incorporates
+                            violence or poses a serious threat to the targeted
+                            group based on race, gender, ethnicity, religion,
+                            nationality, sexual orientation, disability
+                            status, or caste.</td>
+                    </tr>
+                    <tr>
+                        <td>Harassment</td>
+                        <td>Content that expresses, incites, or promotes the
+                            use of harassing language directed at any
+                            target.</td>
+                    </tr>
+                    <tr>
+                        <td>Harassment/Threatenin
+                            g</td>
+                        <td>Content involving harassment that also
+                            incorporates violence or poses serious harm to any
+                            target.</td>
+                    </tr>
+                    <tr>
+                        <td>Self-harm</td>
+                        <td>Content that advocates, fosters, or portrays acts of
+                            self-harm, including but not limited to
+                            suicide, cutting, and eating disorders.</td>
+                    </tr>
+                    <tr>
+                        <td>Self-harm/Intent</td>
+                        <td>Content in which the speaker communicates their
+                            involvement in or intention to participate in
+                            acts of self-harm, such as suicide, cutting, and
+                            eating disorders.</td>
+                    </tr>
+                    <tr>
+                        <td>Self-harm/Instructions</td>
+                        <td>Content that promotes the engagement in self-
+                            harm activities, such as suicide, cutting, and
+                            eating disorders, or provides instructions or advice
+                            on how to carry out such acts.</td>
+                    </tr>
+                    <tr>
+                        <td>Sexual</td>
+                        <td>Content created with the intent to evoke sexual
+                            arousal, including descriptions of sexual
+                            activities or the promotion of sexual services
+                            (excluding sex education and wellness).</td>
+                    </tr>
+                    <tr>
+                        <td>Sexual/Minors</td>
+                        <td>Content of a sexual nature that involves an
+                            individual who is under 18 years old.</td>
+                    </tr>
+                    <tr>
+                        <td>Violence</td>
+                        <td>Content portraying death, violence, or physical
+                            harm.</td>
+                    </tr>
+                    <tr>
+                        <td>Violence/Graphic</td>
+                        <td>Content illustrating death, violence, or physical
+                            injury with graphic detail.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                The moderation endpoint is free for monitoring SML Retail India Private Limited. API
+                inputs and outputs, with other use cases currently disallowed. Note that accuracy
+                may decrease for longer text pieces. For improved accuracy, consider breaking
+                down lengthy content into smaller chunks, each less than 2,000 characters.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
